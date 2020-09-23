@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>YO</title>
+</head>
+<body>
+    <a href="{{ path('create_pins') }}">Create a pin</a>
+
+    {% for pin in pins %}
+
+        <h1>{{ pin.title }}</h1>
+        <p>{{ pin.description }}</p>
+
+    {% else %}
+
+        <p> Aucuns Pins </p>
+    {% endfor %}
+
+</body>
+</html>
